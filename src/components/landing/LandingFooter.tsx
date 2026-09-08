@@ -13,6 +13,7 @@ interface LandingFooterProps {
 
 export function LandingFooter({ locale }: LandingFooterProps) {
   const t = useTranslations("landing.footer");
+  const tNav = useTranslations("landing.nav");
 
   const languages = [
     { code: "es", label: "Español", flag: "🇪🇸" },
@@ -26,7 +27,7 @@ export function LandingFooter({ locale }: LandingFooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Col 1: Brand */}
           <div className="md:col-span-2 space-y-4">
-            <Link href={`/${locale}`} className="flex items-center gap-3">
+            <Link href={`/${locale}/`} className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-2xl bg-white dark:bg-[#2C2C2E] border border-black/5 dark:border-white/10 shadow-sm p-1.5 flex items-center justify-center flex-shrink-0">
                 <Image
                   src="/logo.png"
@@ -52,7 +53,7 @@ export function LandingFooter({ locale }: LandingFooterProps) {
                 {languages.map((lang) => (
                   <Link
                     key={lang.code}
-                    href={`/${lang.code}`}
+                    href={`/${lang.code}/`}
                     className={`px-2.5 py-0.5 rounded-full text-xs transition-colors ${
                       lang.code === locale
                         ? "bg-[#007AFF]/10 text-[#007AFF] dark:text-[#52A6FF] font-bold border border-[#007AFF]/25"
@@ -74,27 +75,27 @@ export function LandingFooter({ locale }: LandingFooterProps) {
             <ul className="space-y-2.5 text-xs sm:text-sm">
               <li>
                 <a href="#caracteristicas" className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
-                  Características
+                  {tNav("features")}
                 </a>
               </li>
               <li>
                 <a href="#beneficios" className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
-                  Beneficios
+                  {tNav("comparison")}
                 </a>
               </li>
               <li>
                 <a href="#como-funciona" className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
-                  ¿Cómo Funciona?
+                  {tNav("howItWorks")}
                 </a>
               </li>
               <li>
                 <a href="#precios" className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
-                  {t("pricing")}
+                  {tNav("pricing")}
                 </a>
               </li>
               <li>
                 <a href="#faq" className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
-                  Preguntas Frecuentes
+                  {tNav("faq")}
                 </a>
               </li>
             </ul>
@@ -107,17 +108,17 @@ export function LandingFooter({ locale }: LandingFooterProps) {
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
               <li>
-                <Link href={`/${locale}/terms`} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
+                <Link href={`/${locale}/terms/`} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
                   {t("terms")}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/privacy`} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
+                <Link href={`/${locale}/privacy/`} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
                   {t("privacy")}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/refunds`} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
+                <Link href={`/${locale}/refunds/`} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
                   {t("refunds")}
                 </Link>
               </li>
