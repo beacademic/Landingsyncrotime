@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { universityPath } from "@/lib/universityPage";
 
 export const dynamic = "force-static";
 
@@ -36,6 +37,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       });
     }
+  }
+
+  // Página de universidades: slug propio por idioma.
+  const universityAlternates = {
+    es: `${baseUrl}${universityPath("es")}`,
+    en: `${baseUrl}${universityPath("en")}`,
+    pt: `${baseUrl}${universityPath("pt")}`,
+    "x-default": `${baseUrl}${universityPath("es")}`,
+  };
+  for (const locale of LOCALES) {
+    sitemapEntries.push({
+      url: `${baseUrl}${universityPath(locale)}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+      alternates: { languages: universityAlternates },
+    });
   }
 
   return sitemapEntries;

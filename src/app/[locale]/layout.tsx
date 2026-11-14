@@ -104,8 +104,6 @@ export async function generateMetadata({
       title: ogTitle,
       description: ogDesc,
       images: [`${baseUrl}/og-image.png`],
-      creator: "@SyncroTime",
-      site: "@SyncroTime",
     },
     robots: {
       index: true,

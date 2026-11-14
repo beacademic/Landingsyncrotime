@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Globe } from "lucide-react";
+import { UNIVERSITY_CONTENT, universityPath, type Locale } from "@/lib/universityPage";
 
 interface LandingFooterProps {
   locale: string;
@@ -74,30 +75,37 @@ export function LandingFooter({ locale }: LandingFooterProps) {
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
               <li>
-                <a href="#caracteristicas" className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
+                <a href={`/${locale}/#caracteristicas`} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
                   {tNav("features")}
                 </a>
               </li>
               <li>
-                <a href="#beneficios" className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
+                <a href={`/${locale}/#beneficios`} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
                   {tNav("comparison")}
                 </a>
               </li>
               <li>
-                <a href="#como-funciona" className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
+                <a href={`/${locale}/#como-funciona`} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
                   {tNav("howItWorks")}
                 </a>
               </li>
               <li>
-                <a href="#precios" className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
+                <a href={`/${locale}/#precios`} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
                   {tNav("pricing")}
                 </a>
               </li>
               <li>
-                <a href="#faq" className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
+                <a href={`/${locale}/#faq`} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
                   {tNav("faq")}
                 </a>
               </li>
+              {locale in UNIVERSITY_CONTENT && (
+                <li>
+                  <Link href={universityPath(locale as Locale)} className="hover:text-[#007AFF] dark:hover:text-white transition-colors">
+                    {UNIVERSITY_CONTENT[locale as Locale].navLabel}
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
 

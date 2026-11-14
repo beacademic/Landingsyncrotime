@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 const baseUrl = (process.env.NEXT_PUBLIC_LANDING_URL || "https://syncrotime.com").replace(/\/$/, "");
 
@@ -36,11 +37,11 @@ export default function RootPage() {
       <body style={{ fontFamily: "system-ui, sans-serif", padding: "2rem", textAlign: "center" }}>
         <p>SyncroTime</p>
         <nav aria-label="Idioma / Language / Idioma">
-          <a href="/es/" hrefLang="es">Español</a>
+          <Link href="/es/" hrefLang="es">Español</Link>
           {" · "}
-          <a href="/en/" hrefLang="en">English</a>
+          <Link href="/en/" hrefLang="en">English</Link>
           {" · "}
-          <a href="/pt/" hrefLang="pt">Português</a>
+          <Link href="/pt/" hrefLang="pt">Português</Link>
         </nav>
       </body>
     </html>
