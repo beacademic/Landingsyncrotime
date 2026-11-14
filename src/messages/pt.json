@@ -357,7 +357,7 @@
       "startTrial": "Testar Grátis por 7 Dias"
     },
     "hero": {
-      "badge": "⚡ Motor de Otimização Algorítmica #1 para Escolas e Universidades",
+      "badge": "⚡ Motor de otimização de horários para escolas e universidades",
       "title1": "Gerador de Horários Escolares",
       "titleHighlight": "100% Automático e sem Conflitos",
       "subtitle": "Gere grades horárias completas para escolas e faculdades em menos de 15 minutos. Elimine planilhas manuais, choques de professores e janelas excessivas com precisão matemática.",
@@ -369,10 +369,10 @@
       "stat1Label": "Tempo médio de geração",
       "stat2Value": "0",
       "stat2Label": "Conflitos de professores ou salas",
-      "stat3Value": "500+",
-      "stat3Label": "Instituições de ensino",
-      "stat4Value": "99.6%",
-      "stat4Label": "Satisfação dos gestores"
+      "stat3Value": "3",
+      "stat3Label": "Idiomas: português, espanhol e inglês",
+      "stat4Value": "7 dias",
+      "stat4Label": "Teste grátis completo"
     },
     "preview": {
       "badge": "Visualizador em Tempo Real",
@@ -463,23 +463,6 @@
       "feat5": "Módulo de auditoria de carga horária docente",
       "feat6": "Acesso seguro na nuvem com interface em PT / ES / EN",
       "feat7": "Suporte prioritário por e-mail"
-    },
-    "testimonials": {
-      "badge": "Depoimentos Reais",
-      "title": "Aprovado por diretores e coordenadores",
-      "subtitle": "Veja como instituições de ensino otimizaram o início do ano letivo com o SyncroTime.",
-      "t1Name": "Maria González",
-      "t1Role": "Diretora Pedagógica",
-      "t1School": "Colégio São Martinho",
-      "t1Text": "O SyncroTime reduziu de 3 semanas para apenas 20 minutos a elaboração da nossa grade horária. Zero reclamações de professores.",
-      "t2Name": "Carlos Fuentes",
-      "t2Role": "Coordenador de Ensino",
-      "t2School": "Escola Técnica do Norte",
-      "t2Text": "Coordenar 80 professores e 12 laboratórios era um pesadelo. Com o SyncroTime os horários ficaram balanceados e sem janelas vagas.",
-      "t3Name": "Ana Beatriz Silva",
-      "t3Role": "Gestora Educacional",
-      "t3School": "Instituto Horizonte",
-      "t3Text": "A facilidade para exportar PDFs individuais para cada professor economizou dias de trabalho da secretaria. Excelente ferramenta."
     },
     "faq": {
       "badge": "Perguntas Frequentes",

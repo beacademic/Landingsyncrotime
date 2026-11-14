@@ -357,7 +357,7 @@
       "startTrial": "Probar Gratis 7 Días"
     },
     "hero": {
-      "badge": "⚡ Motor de Optimización Algorítmica #1 para Colegios y Universidades",
+      "badge": "⚡ Motor de optimización de horarios para colegios y universidades",
       "title1": "Generador de Horarios Escolares",
       "titleHighlight": "100% Automático y sin Cruces",
       "subtitle": "Genera horarios escolares y universitarios perfectos en solo 15 minutos. Elimina para siempre el caos de Excel, las ventanas excesivas y los cruces de profesores con nuestro motor algorítmico inteligente.",
@@ -369,10 +369,10 @@
       "stat1Label": "Tiempo promedio de generación",
       "stat2Value": "0",
       "stat2Label": "Cruces de profesores o salas",
-      "stat3Value": "500+",
-      "stat3Label": "Instituciones educativas",
-      "stat4Value": "99.6%",
-      "stat4Label": "Satisfacción de directivos"
+      "stat3Value": "3",
+      "stat3Label": "Idiomas: español, inglés y portugués",
+      "stat4Value": "7 días",
+      "stat4Label": "Prueba gratis completa"
     },
     "preview": {
       "badge": "Visualizador en Vivo",
@@ -463,23 +463,6 @@
       "feat5": "Módulo de auditoría de carga docente",
       "feat6": "Acceso seguro multi-idioma (ES / EN / PT)",
       "feat7": "Soporte técnico prioritario por email"
-    },
-    "testimonials": {
-      "badge": "Testimonios de Usuarios",
-      "title": "La solución preferida por directores y coordinadores",
-      "subtitle": "Descubre cómo instituciones educativas optimizaron su inicio de año escolar con SyncroTime.",
-      "t1Name": "María González",
-      "t1Role": "Directora Académica",
-      "t1School": "Colegio San Martín",
-      "t1Text": "SyncroTime redujo de 3 semanas a solo 20 minutos el tiempo de confección de nuestros horarios escolares. Cero reclamos de profesores.",
-      "t2Name": "Carlos Fuentes",
-      "t2Role": "Jefe de UTP",
-      "t2School": "Liceo Técnico del Norte",
-      "t2Text": "Coordinar 80 profesores y 12 talleres técnicos era un laberinto. Con SyncroTime los horarios quedaron balanceados y sin ventanas innecesarias.",
-      "t3Name": "Roberto Valenzuela",
-      "t3Role": "Coordinador de Horarios",
-      "t3School": "Instituto Santa María",
-      "t3Text": "La exportación en PDF y Excel para cada profesor nos ahorró días de trabajo administrativo. La mejor inversión que hicimos este año."
     },
     "faq": {
       "badge": "Preguntas Frecuentes",

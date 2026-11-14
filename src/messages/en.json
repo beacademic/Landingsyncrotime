@@ -357,7 +357,7 @@
       "startTrial": "Start Free 7-Day Trial"
     },
     "hero": {
-      "badge": "⚡ #1 Algorithmic Optimization Engine for Schools & Universities",
+      "badge": "⚡ Timetable optimization engine for schools & universities",
       "title1": "Automated School Timetable Generator",
       "titleHighlight": "100% Conflict-Free Scheduling",
       "subtitle": "Generate complete master timetables for schools and colleges in under 15 minutes. Eliminate manual spreadsheet chaos, teacher overlaps, and excessive idle gaps with mathematical precision.",
@@ -369,10 +369,10 @@
       "stat1Label": "Average generation time",
       "stat2Value": "0",
       "stat2Label": "Teacher or room conflicts",
-      "stat3Value": "500+",
-      "stat3Label": "Educational institutions",
-      "stat4Value": "99.6%",
-      "stat4Label": "Admin satisfaction rate"
+      "stat3Value": "3",
+      "stat3Label": "Languages: English, Spanish and Portuguese",
+      "stat4Value": "7 days",
+      "stat4Label": "Full free trial"
     },
     "preview": {
       "badge": "Live Timetable Matrix",
@@ -463,23 +463,6 @@
       "feat5": "Teacher workload audit and contract hours tracker",
       "feat6": "Secure cloud access with multi-language UI (EN / ES / PT)",
       "feat7": "Priority email and chat customer support"
-    },
-    "testimonials": {
-      "badge": "Client Stories",
-      "title": "Trusted by academic leaders worldwide",
-      "subtitle": "See how schools and universities transformed their term planning with SyncroTime.",
-      "t1Name": "Maria Gonzalez",
-      "t1Role": "Academic Director",
-      "t1School": "St. Martin Academy",
-      "t1Text": "SyncroTime cut our scheduling timeline from three weeks down to 20 minutes. Zero teacher complaints and perfect room balance.",
-      "t2Name": "Charles Fletcher",
-      "t2Role": "Head of Curriculum",
-      "t2School": "Northern Technical College",
-      "t2Text": "Coordinating 80 instructors and 12 science labs used to be a nightmare. SyncroTime produced balanced timetables with no unwanted gaps.",
-      "t3Name": "Robert Vance",
-      "t3Role": "Operations Lead",
-      "t3School": "Horizon Preparatory School",
-      "t3Text": "Exporting clean individual PDFs for every teacher in one click saved our administrative staff days of tedious manual work."
     },
     "faq": {
       "badge": "Frequently Asked Questions",
