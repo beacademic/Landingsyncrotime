@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "SyncroTime — Automated School Timetable Generator & Scheduling Software",
-    "description": "Generate conflict-free master school & university schedules in minutes with advanced optimization algorithms. Export to PDF & Excel. Start your 7-day free trial.",
+    "title": "School & University Timetable Generator",
+    "description": "Generate conflict-free school and university timetables in minutes with an optimization engine. Export to PDF and Excel. Start your 7-day free trial.",
     "keywords": "school timetable generator, automatic schedule maker, class schedule generator, school scheduling software, master schedule builder, university timetable software, conflict-free teacher schedule, timetabling software",
-    "ogTitle": "SyncroTime — Automated School Timetable Generator & Scheduling Software",
+    "ogTitle": "SyncroTime: school & university timetable generator",
     "ogDescription": "Build complex school & college timetables in minutes with zero teacher or room conflicts. Free 7-day trial."
   },
   "nav": {

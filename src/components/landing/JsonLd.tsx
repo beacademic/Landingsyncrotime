@@ -49,17 +49,10 @@ export function JsonLd({ locale, baseUrl, faqList }: JsonLdProps) {
         billingDuration: "P1Y",
       },
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      ratingCount: "128",
-      bestRating: "5",
-      worstRating: "1",
-    },
     author: {
       "@type": "Organization",
-      name: "SyncroTime",
-      url: baseUrl,
+      name: "BE Academic",
+      url: "https://beacademics.com/",
     },
     featureList: [
       "Motor algorítmico de optimización combinatoria sin cruces",
@@ -89,6 +82,12 @@ export function JsonLd({ locale, baseUrl, faqList }: JsonLdProps) {
     name: "SyncroTime",
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
+    parentOrganization: {
+      "@type": "Organization",
+      name: "BE Academic",
+      legalName: "Sociedad de Formación BE Academic Limitada",
+      url: "https://beacademics.com/",
+    },
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
