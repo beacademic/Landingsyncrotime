@@ -11,7 +11,7 @@
  */
 export type PolicyLocale = "es" | "en" | "pt";
 
-export const POLICY_VERSION = "2.0";
+export const POLICY_VERSION = "2.1";
 export const PRIVACY_EMAIL = "beacademic.ltda@gmail.com";
 
 export type Block = { p: string } | { ul: string[] };
@@ -44,7 +44,7 @@ export interface PolicyContent {
 
 const es: PolicyContent = {
   title: "Política de Privacidad",
-  updated: "Última actualización: 18 de noviembre de 2026 · versión 2.0",
+  updated: "Última actualización: 18 de noviembre de 2026 · versión 2.1",
   back: "Volver al inicio",
   backToPricing: "Volver a precios",
   intro: [
@@ -207,11 +207,15 @@ const es: PolicyContent = {
       ],
     },
     {
-      title: "10. Usuarios fuera de Chile",
+      title: "10. Usuarios de la Unión Europea, Brasil y otros países",
       blocks: [
-        {
-          p: "SyncroTime está disponible en español, inglés y portugués. Aplicamos la ley chilena. Si usted reside en otro país, escríbanos y atenderemos su solicitud conforme a la ley que corresponda.",
-        },
+        { p: "SyncroTime está disponible en español, inglés y portugués. Al registrarse, la institución indica su país y aplicamos, además de la ley chilena, la ley de protección de datos que corresponda:" },
+        { ul: [
+            "**Espacio Económico Europeo, Reino Unido y Suiza (RGPD y normas equivalentes):** las bases de licitud son las de la tabla (ejecución del contrato, art. 6.1.b; obligación legal, art. 6.1.c; interés legítimo, art. 6.1.f). Usted tiene derecho de acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición, y a retirar su consentimiento cuando sea la base. Puede reclamar ante la autoridad de control de su país. Las transferencias a Estados Unidos se amparan en las cláusulas contractuales tipo de la Comisión Europea que ofrecen nuestros proveedores.",
+            "**Brasil (LGPD, Ley N° 13.709/2018):** usted tiene los derechos del art. 18: confirmación y acceso, corrección, anonimización, bloqueo o eliminación de datos innecesarios, portabilidad, información sobre con quién compartimos sus datos y revocación del consentimiento. Puede reclamar ante la Autoridad Nacional de Protección de Datos (ANPD). El encargado de protección de datos («encarregado») es Carlos Mundaca Valdebenito (beacademic.ltda@gmail.com). Las transferencias internacionales se amparan en el art. 33 de la LGPD.",
+            "**Otros países:** atendemos su solicitud conforme a la ley chilena y a la ley de su país que resulte aplicable."
+        ] },
+        { p: "Los plazos de respuesta son los de la sección 7, salvo que la ley aplicable fije uno más breve (por ejemplo, un mes en el RGPD o 15 días para el acceso completo en la LGPD), que respetaremos. Los datos académicos de su institución pueden exportarse y eliminarse en cualquier momento desde **Datos y privacidad**, en la plataforma." },
       ],
     },
     {
@@ -227,7 +231,7 @@ const es: PolicyContent = {
 
 const en: PolicyContent = {
   title: "Privacy Policy",
-  updated: "Last updated: November 18, 2026 · version 2.0",
+  updated: "Last updated: November 18, 2026 · version 2.1",
   back: "Back to home",
   backToPricing: "Back to pricing",
   intro: [
@@ -390,11 +394,15 @@ const en: PolicyContent = {
       ],
     },
     {
-      title: "10. Users outside Chile",
+      title: "10. Users in the European Union, Brazil and other countries",
       blocks: [
-        {
-          p: "SyncroTime is available in Spanish, English and Portuguese. We apply Chilean law. If you live in another country, write to us and we will handle your request under the law that applies to you.",
-        },
+        { p: "SyncroTime is available in Spanish, English and Portuguese. When registering, the institution states its country and, in addition to Chilean law, we apply the relevant data protection law:" },
+        { ul: [
+            "**European Economic Area, United Kingdom and Switzerland (GDPR and equivalent laws):** the legal bases are those in the table (performance of a contract, Art. 6(1)(b); legal obligation, Art. 6(1)(c); legitimate interests, Art. 6(1)(f)). You have the right of access, rectification, erasure, restriction of processing, data portability and objection, and to withdraw consent where it is the basis. You may lodge a complaint with the supervisory authority in your country. Transfers to the United States rely on the European Commission's Standard Contractual Clauses offered by our providers.",
+            "**Brazil (LGPD, Law No. 13.709/2018):** you have the rights in Art. 18: confirmation and access, correction, anonymization, blocking or deletion of unnecessary data, portability, information about who we share your data with, and withdrawal of consent. You may lodge a complaint with the National Data Protection Authority (ANPD). Our data protection officer (\"encarregado\") is Carlos Mundaca Valdebenito (beacademic.ltda@gmail.com). International transfers rely on Art. 33 of the LGPD.",
+            "**Other countries:** we handle your request under Chilean law and any applicable law of your country."
+        ] },
+        { p: "Response times are those in section 7 unless the applicable law sets a shorter one (for example, one month under the GDPR or 15 days for full access under the LGPD), which we will meet. Your institution's academic data can be exported and deleted at any time from **Data & privacy** in the platform." },
       ],
     },
     {
@@ -410,7 +418,7 @@ const en: PolicyContent = {
 
 const pt: PolicyContent = {
   title: "Política de Privacidade",
-  updated: "Última atualização: 18 de novembro de 2026 · versão 2.0",
+  updated: "Última atualização: 18 de novembro de 2026 · versão 2.1",
   back: "Voltar ao início",
   backToPricing: "Voltar aos preços",
   intro: [
@@ -573,11 +581,15 @@ const pt: PolicyContent = {
       ],
     },
     {
-      title: "10. Usuários fora do Chile",
+      title: "10. Usuários da União Europeia, do Brasil e de outros países",
       blocks: [
-        {
-          p: "O SyncroTime está disponível em espanhol, inglês e português. Aplicamos a lei chilena. Se você mora em outro país, escreva para nós e atenderemos sua solicitação conforme a lei que lhe corresponda.",
-        },
+        { p: "O SyncroTime está disponível em espanhol, inglês e português. No cadastro, a instituição informa seu país e aplicamos, além da lei chilena, a lei de proteção de dados correspondente:" },
+        { ul: [
+            "**Brasil (LGPD, Lei nº 13.709/2018):** você tem os direitos do art. 18: confirmação e acesso, correção, anonimização, bloqueio ou eliminação de dados desnecessários, portabilidade, informação sobre com quem compartilhamos seus dados e revogação do consentimento. Pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD). O encarregado pelo tratamento de dados pessoais é Carlos Mundaca Valdebenito (beacademic.ltda@gmail.com). As transferências internacionais se amparam no art. 33 da LGPD.",
+            "**Espaço Econômico Europeu, Reino Unido e Suíça (RGPD e normas equivalentes):** as bases legais são as da tabela (execução do contrato, art. 6.º, n.º 1, b; obrigação legal, alínea c; interesse legítimo, alínea f). Você tem direito de acesso, retificação, apagamento, limitação do tratamento, portabilidade e oposição, e de retirar o consentimento quando ele for a base. Pode reclamar à autoridade de controle do seu país. As transferências para os Estados Unidos se amparam nas cláusulas contratuais-tipo da Comissão Europeia oferecidas por nossos fornecedores.",
+            "**Outros países:** atendemos seu pedido conforme a lei chilena e a lei do seu país que for aplicável."
+        ] },
+        { p: "Os prazos de resposta são os da seção 7, salvo se a lei aplicável fixar um menor (por exemplo, 15 dias para o acesso completo na LGPD ou um mês no RGPD), que respeitaremos. Os dados acadêmicos da sua instituição podem ser exportados e excluídos a qualquer momento em **Dados e privacidade**, na plataforma." },
       ],
     },
     {

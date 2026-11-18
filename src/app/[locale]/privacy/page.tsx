@@ -6,6 +6,7 @@ import { setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/request";
 import { PrivacyPolicyArticle } from "@/components/legal/PrivacyPolicyArticle";
 import { policyFor } from "@/lib/privacyPolicy";
+import { legalUiFor } from "@/lib/legalDocs";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -94,11 +95,11 @@ export default async function PrivacyPage({
 
       {/* ─── Footer ─── */}
       <footer className="py-8 px-4 border-t border-black/5 dark:border-white/10 text-center text-xs text-[#8E8E93]">
-        <p className="mb-2">© {new Date().getFullYear()} SyncroTime · Todos los derechos reservados</p>
+        <p className="mb-2">© {new Date().getFullYear()} SyncroTime · {legalUiFor(locale).rights}</p>
         <div className="flex justify-center gap-4">
-          <Link href={`/${locale}/terms/`} className="hover:text-[#007AFF] transition-colors">Términos</Link>
-          <Link href={`/${locale}/privacy/`} className="hover:text-[#007AFF] transition-colors">Privacidad</Link>
-          <Link href={`/${locale}/refunds/`} className="hover:text-[#007AFF] transition-colors">Reembolsos</Link>
+          <Link href={`/${locale}/terms/`} className="hover:text-[#007AFF] transition-colors">{legalUiFor(locale).terms}</Link>
+          <Link href={`/${locale}/privacy/`} className="hover:text-[#007AFF] transition-colors">{legalUiFor(locale).privacy}</Link>
+          <Link href={`/${locale}/refunds/`} className="hover:text-[#007AFF] transition-colors">{legalUiFor(locale).refunds}</Link>
         </div>
       </footer>
     </div>

@@ -7,7 +7,7 @@ import { PRIVACY_EMAIL, policyFor } from "@/lib/privacyPolicy";
  */
 const TOKEN = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`|[\w.+-]+@[\w-]+\.[\w.]*\w)/g;
 
-function inline(text: string): ReactNode[] {
+export function inline(text: string): ReactNode[] {
   return text.split(TOKEN).map((part, i) => {
     if (part.startsWith("**")) return <strong key={i} className="text-[#1D1D1F] dark:text-white">{part.slice(2, -2)}</strong>;
     if (part.startsWith("*") && part.endsWith("*") && part.length > 2) return <em key={i}>{part.slice(1, -1)}</em>;
