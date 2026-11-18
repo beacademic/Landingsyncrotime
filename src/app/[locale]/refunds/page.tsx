@@ -19,9 +19,9 @@ export async function generateMetadata({
   const baseUrl = (process.env.NEXT_PUBLIC_LANDING_URL || "https://syncrotime.com").replace(/\/$/, "");
 
   const titleByLocale: Record<string, string> = {
-    es: "Política de Reembolsos | SyncroTime",
-    en: "Refund Policy | SyncroTime",
-    pt: "Política de Reembolso | SyncroTime",
+    es: "Política de Reembolsos",
+    en: "Refund Policy",
+    pt: "Política de Reembolso",
   };
 
   const title = titleByLocale[locale] || titleByLocale.es;

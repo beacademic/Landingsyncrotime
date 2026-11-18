@@ -19,9 +19,9 @@ export async function generateMetadata({
   const baseUrl = (process.env.NEXT_PUBLIC_LANDING_URL || "https://syncrotime.com").replace(/\/$/, "");
 
   const titleByLocale: Record<string, string> = {
-    es: "Términos de Servicio | SyncroTime",
-    en: "Terms of Service | SyncroTime",
-    pt: "Termos de Serviço | SyncroTime",
+    es: "Términos de Servicio",
+    en: "Terms of Service",
+    pt: "Termos de Serviço",
   };
 
   const title = titleByLocale[locale] || titleByLocale.es;
@@ -94,7 +94,7 @@ export default async function TermsPage({
                 1. Aceptación de los Términos
               </h2>
               <p>
-                Al registrarse, acceder o utilizar la plataforma <strong>SyncroTime</strong> (en adelante, &quot;el Servicio&quot;), provista por BeAcademic Limitada (en adelante, &quot;la Empresa&quot;), usted acepta estar sujeto a estos términos y condiciones. Si no está de acuerdo con alguna parte de estos términos, no podrá utilizar el servicio.
+                Al registrarse, acceder o utilizar la plataforma <strong>SyncroTime</strong> (en adelante, &quot;el Servicio&quot;), provista por Sociedad de Formación BE Academic Limitada, RUT 77.650.439-4 (en adelante, &quot;la Empresa&quot;), usted acepta estar sujeto a estos términos y condiciones. Si no está de acuerdo con alguna parte de estos términos, no podrá utilizar el servicio.
               </p>
             </section>
 
